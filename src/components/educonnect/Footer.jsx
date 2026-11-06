@@ -1,5 +1,7 @@
 import React from 'react';
-import { Sparkles, Mail, MapPin } from 'lucide-react';
+import { Mail, MapPin } from 'lucide-react';
+import logo from "./Educonnect.png";
+
 
 const NAV = [
   { label: 'How It Works', href: '#how-it-works' },
@@ -16,10 +18,10 @@ export default function Footer() {
         <div className="grid lg:grid-cols-[1.4fr_1fr_1fr] gap-10 lg:gap-12">
           <div>
             <a href="#home" className="flex items-center gap-2.5 group" aria-label="EduConnect home">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary-foreground text-primary">
-                <Sparkles className="h-4.5 w-4.5" strokeWidth={2.2} />
-              </span>
-              <span className="font-display text-lg font-bold tracking-tight">EduConnect</span>
+    
+                              <img src={logo} alt="Logo" className="h-20 w-20" />
+             
+              <span className="font-display text-lg font-bld tracking-tight">EduConnect</span>
             </a>
             <p className="mt-4 text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
               Learning support that fits the student. Made in Mauritius, with the wider world in mind.

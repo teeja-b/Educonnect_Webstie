@@ -1,8 +1,9 @@
 import React from 'react';
-import { Sparkles, Mail, MapPin } from 'lucide-react';
+import {  Mail, MapPin } from 'lucide-react';
 import Reveal from './Reveal';
 import SectionHeading from './SectionHeading';
 import { PHOTOS } from './photos';
+import logo from "./Educonnect.png";
 
 export default function About() {
   return (
@@ -49,7 +50,7 @@ export default function About() {
               <div className="rounded-2xl border border-border/60 bg-card p-6 shadow-float">
                 <div className="flex items-start gap-4">
                   <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-primary text-primary-foreground">
-                    <Sparkles className="h-6 w-6" />
+                    <img src={logo} alt="Logo" className="h-6 w-6" />
                   </span>
                   <div>
                     <h3 className="font-display text-lg font-bold text-primary">Our mission</h3>

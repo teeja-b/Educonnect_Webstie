@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Menu, X, Sparkles } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import logo from "./Educonnect.png";
 
 const NAV_LINKS = [
   { label: 'Home', href: '#home' },
@@ -41,9 +42,8 @@ export default function Navbar() {
     >
       <nav className="mx-auto max-w-7xl px-5 sm:px-8 h-16 lg:h-18 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2.5 group" aria-label="EduConnect home">
-          <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-primary text-primary-foreground shadow-float transition-transform group-hover:scale-105">
-            <Sparkles className="h-4.5 w-4.5" strokeWidth={2.2} />
-          </span>
+                  <img src={logo} alt="Logo" className="h-20.5 w-20" />
+          
           <span className="font-display text-lg font-bold tracking-tight text-primary">
             EduConnect
           </span>
